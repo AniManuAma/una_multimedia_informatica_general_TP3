@@ -1,0 +1,235 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    flex: 1;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Estilos generales */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('../img/fondo.jpg');
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #a0909d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(107, 89, 116, 0.6);
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* Estilos del menú de navegación */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #472b4e;
+    padding: 10px;
+    @media (max-width: 920px ){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+   
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #9b7b9b;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+
+/* Estilos de la sección principal */
+main {
+    flex: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #72516c;
+}
+.intro h2 {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #72516c;
+}
+.intro a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5b179b;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.intro a:hover {
+    background-color: #7c33b8;
+}
+.cta-button:hover {
+    background-color: #a266d3;
+}
+
+/*Diseño de las otras páginas*/
+.resto {
+    text-align: left;
+    background-color: white;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resto h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #72516c;
+}
+.resto a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5b179b;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.resto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resto strong {
+    color: #804788;
+}
+.resto a:hover {
+    background-color: #7c33b8;
+}
+.cta-button:hover {
+    background-color: #a266d3;
+}
+
+
+
+/*Subsecciones dibujos*/
+.orden{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.infodibujos{
+    text-align: left;
+    background-color: #d5d5d8;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
+}
+.infodibujos:hover{
+    background-color: #da99da;
+}
+.infodibujos .descripcion {
+    color: #5b179b;
+}
+
+/*Sección desarrolladores*/
+.developer-info {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.developer-info h2 {
+    margin: 0;
+    color: #333;
+}
+
+.developer-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.developer-info img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.experience {
+    background-color: #e8e4e9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.experience h2 {
+    color: #292729;
+}
+
+.experience p {
+    font-size: 16px;
+    line-height: 1.6;
+}
