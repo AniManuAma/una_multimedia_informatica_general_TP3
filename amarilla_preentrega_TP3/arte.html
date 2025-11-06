@@ -6,8 +6,9 @@
     <meta name="description" content="Porfolio.">
     <title>Porfolio profesional de Artista Multimedial</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="funciones.js"></script>
 </head>
-<body>
+<body onload="preloadImages()">
         <header>
             <nav>
                 <ul>
@@ -18,78 +19,56 @@
             </nav>
         </header>
 <main>
-  <p> !!!!PÁGINA EN EDICIÓN, FALTA EL JS Y TERMINAR DE EDITAR LOS FORMATOS DE MIS DIBUJOS PARA AGREGARLOS A LA WEB!!!!! </p>
 <!----------------- Sección 1-------------------->
 
-<section class="orden">
+<article class="orden">
+
+    <div id="contenedor_imagen_grande">
+      
+      <a onclick="showHideLayers('contenedor_imagen_grande','','hide')" href="#"><img id="imagen_grande"></a></div>
 
     <section class="infodibujos">
-    <div class="mostrador" id="mostrador">
-        <div class="fila">
-            <div class="item">
-                <div class="contenedor-foto">
-                    <img src="img/miarte/dibujo1.jpg" alt="dibujo" width="400px" class="img-fluid" data-bs-toggle="modal" data-bs-target="#dibujo">
-                </div>
-            </div>
-        </section>
-
-
-        <!----- 1 ------>
-
-        <section class="infodibujos">
-            <div class="item">
-                <div class="contenedor-foto">
-                    <img src="img/miarte/dibujo1.jpg" alt="dibujo" width="400px" class="img-fluid" data-bs-toggle="modal" data-bs-target="#dibujo">
-                </div>
-            </div>
+                 <a class="infodibujos" href="#" onClick="swapImage('imagen_grande','','img/miarte/01.jpg',1);showHideLayers('contenedor_imagen_grande','','show')"><img src="img/miarte/m_1.jpg" alt="Red Queen Lass" width="400"></a>
         </section>
 
         <!----- 2 ------>
 
         <section class="infodibujos">
-            <div class="item">
-                <div class="contenedor-foto">
-                    <img src="img/miarte/dibujo1.jpg" alt="dibujo" width="400px" class="img-fluid" data-bs-toggle="modal" data-bs-target="#dibujo">
-                </div>
-            </div>
+                    <a class="infodibujos" href="#" onClick="swapImage('imagen_grande','','img/miarte/02.jpg',1);showHideLayers('contenedor_imagen_grande','','show')"><img src="img/miarte/m_2.jpg" alt="Lassery" width="400"></a>
         </section>
 
-</section>
+        <!----- 3 ------>
 
+        <section class="infodibujos">
+                    <a class="infodibujos" href="#" onClick="swapImage('imagen_grande','','img/miarte/03.jpg',1);showHideLayers('contenedor_imagen_grande','','show')"><img src="img/miarte/m_3.jpg" alt="Mask Lass." width="400"></a>
+       </section>
+
+    </article>
     <!----------------- Sección 2-------------------->
 
-<section class="orden">
+<article class="orden">
 
-        <section class="infodibujos">
-            <div class="item">
-                <div class="contenedor-foto">
-                    <img src="img/miarte/dibujo1.jpg" alt="dibujo" width="400px" class="img-fluid" data-bs-toggle="modal" data-bs-target="#dibujo">
-                </div>
-            </div>
+    <div id="contenedor_imagen_grande">
+      
+      <a onclick="showHideLayers('contenedor_imagen_grande','','hide')" href="#"><img id="imagen_grande"></a></div>
+
+    <section class="infodibujos">
+                 <a class="infodibujos" href="#" onClick="swapImage('imagen_grande','','img/miarte/04.jpg',1);showHideLayers('contenedor_imagen_grande','','show')"><img src="img/miarte/m_4.jpg" alt="Red Queen Lass" width="400"></a>
         </section>
 
-        <!----- 4 ------>
+        <!----- 2 ------>
 
         <section class="infodibujos">
-            <div class="item">
-                <div class="contenedor-foto">
-                    <img src="img/miarte/dibujo1.jpg" alt="dibujo" width="400px" class="img-fluid" data-bs-toggle="modal" data-bs-target="#dibujo">
-                </div>
-            </div>
+                    <a class="infodibujos" href="#" onClick="swapImage('imagen_grande','','img/miarte/05.jpg',1);showHideLayers('contenedor_imagen_grande','','show')"><img src="img/miarte/m_5.jpg" alt="Lassery" width="400"></a>
         </section>
 
-        <!----- 5 ------>
+        <!----- 3 ------>
 
         <section class="infodibujos">
-            <div class="item">
-                <div class="contenedor-foto">
-                    <img src="img/miarte/dibujo1.jpg" alt="dibujo" width="400px" class="img-fluid" data-bs-toggle="modal" data-bs-target="#dibujo">
-                </div>
-            </div>
-        </section>
+                    <a class="infodibujos" href="#" onClick="swapImage('imagen_grande','','img/miarte/06.jpg',1);showHideLayers('contenedor_imagen_grande','','show')"><img src="img/miarte/m_6.jpg" alt="Mask Lass." width="400"></a>
+       </section>
 
-
-</section>
+    </article>
 </main>
     <!-- Pie de página -->
     <footer>
